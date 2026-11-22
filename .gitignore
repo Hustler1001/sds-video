@@ -2,3 +2,4 @@ node_modules/
 lavoro/
 __pycache__/
 *.pyc
+package-lock.json
