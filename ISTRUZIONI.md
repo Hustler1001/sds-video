@@ -47,7 +47,7 @@ Le spec nuove vanno in `spec/AAAA-MM-GG-nome.py`. I file di lavoro in `lavoro/` 
 
 1. **Tema**: dalla lista in LEZIONI.md o dal foglio Idee; un evento famoso con due lati in lotta. Diverso dagli ultimi due video lunghi.
 2. **Ricerca**: 8-15 ricerche, cronologia delle decisioni con fonti. Ogni cifra: due fonti.
-3. **Spec** (copia `esempi/mossa_esempio_1992.py`): `EVAL`, `TIMELINE`, `CHAPTERS` (una per mossa: "Mossa N · nome"), `COVER` (pill "Mossa per mossa"), `VOICE = "it-IT-GiuseppeMultilingualNeural"`, `RATE = "-2%"`. Ogni mossa: cartello `card=True` + 1-3 scene, la prima con `mossa=dict(n, chi, voto)`; `barra` su ogni scena (si sposta dopo ogni mossa). 900-1.400 parole parlate, numeri in lettere.
+3. **Spec** (copia `esempi/mossa_esempio_1992.py`): `EVAL`, `TIMELINE`, `CHAPTERS` (una per mossa: "Mossa N · nome"), `COVER` (pill "Mossa per mossa"), `VOICE = "it-IT-ElsaNeural"`, `RATE = "-4%"` (voce scelta da Gen, non cambiarla). Ogni mossa: cartello `card=True` + 1-3 scene, la prima con `mossa=dict(n, chi, voto)`; `barra` su ogni scena (si sposta dopo ogni mossa). 900-1.400 parole parlate, numeri in lettere.
 4. **Anteprima** di 3-4 scene con mossa e guardale; poi `bash make_doc.sh spec/<file>.py <nome>`: durata 6-9 minuti.
 5. Titolo: "<Evento con anno>, mossa per mossa". Descrizione come i documentari (CAPITOLI = le mosse).
 
