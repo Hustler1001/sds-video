@@ -1,24 +1,133 @@
 {
   "nota": "Tutto ciò che è già uscito o in coda su Storia dei Soldi. Aggiorna questo file a ogni video nuovo, così non si ripetono i temi.",
   "documentari": [
-    {"data": "2026-11-16", "titolo": "Come pagavamo: la storia dei soldi in Italia dalla lira al telefono", "tema": "pagamenti 1900-2026: monete, libretti, cambiali, assegni, miniassegni, Bancomat, carte, telefono", "postId": "cmwjkj5o300eps29i0g7kd445"},
-    {"data": "2026-11-23", "titolo": "Pensioni 2027: perché si va in pensione sempre più tardi", "tema": "storia delle pensioni 1898-2028: INPS, retributivo, baby pensioni, Amato, Dini, Fornero, Quota 100", "postId": "cmwjom8iw00gvs29iwyul4qc6"},
-    {"data": "2026-12-01", "titolo": "Tasse al 72%: la storia delle tasse in Italia dal 1864 al 2026", "tema": "fisco 1864-2026: macinato, celibi, IGE, Vanoni, Iva, Irpef, scontrino, 6 per mille 1992, ICI, eurotassa, precompilata", "postId": "cmwmqot260000up925ulhycpc"}
+    {
+      "data": "2026-11-16",
+      "titolo": "Come pagavamo: la storia dei soldi in Italia dalla lira al telefono",
+      "tema": "pagamenti 1900-2026: monete, libretti, cambiali, assegni, miniassegni, Bancomat, carte, telefono",
+      "postId": "cmwjkj5o300eps29i0g7kd445"
+    },
+    {
+      "data": "2026-11-23",
+      "titolo": "Pensioni 2027: perché si va in pensione sempre più tardi",
+      "tema": "storia delle pensioni 1898-2028: INPS, retributivo, baby pensioni, Amato, Dini, Fornero, Quota 100",
+      "postId": "cmwjom8iw00gvs29iwyul4qc6"
+    },
+    {
+      "data": "2026-12-01",
+      "titolo": "Tasse al 72%: la storia delle tasse in Italia dal 1864 al 2026",
+      "tema": "fisco 1864-2026: macinato, celibi, IGE, Vanoni, Iva, Irpef, scontrino, 6 per mille 1992, ICI, eurotassa, precompilata",
+      "postId": "cmwmqot260000up925ulhycpc"
+    }
   ],
   "short": [
-    {"data": "2026-11-17", "tema": "miniassegni del 1975", "cifra_nel_gancio": false, "postId": "cmwjolldz00gns29ipqr70wov"},
-    {"data": "2026-11-18", "tema": "Fiat 600 a rate e cambiali, 590.000 lire nel 1955", "cifra_nel_gancio": true, "postId": "cmwjollf200gos29iqws2el0x"},
-    {"data": "2026-11-19", "tema": "mille lire = 50 centesimi? cambio 1.936,27", "cifra_nel_gancio": true, "postId": "cmwjollg700gps29ienevhl4x"},
-    {"data": "2026-11-20", "tema": "carta e telefono: spendiamo di più?", "cifra_nel_gancio": false, "postId": "cmwjollh900gqs29ipw7e2e3t"},
-    {"data": "2026-11-21", "tema": "Bancomat 1983", "cifra_nel_gancio": false, "postId": "cmwjollid00grs29icuvvc1vw"},
-    {"data": "2026-11-22", "tema": "pensione a 35 anni negli anni Settanta (baby pensioni)", "cifra_nel_gancio": true, "postId": "cmwjphazh00hbs29i9zwvxa3n"},
-    {"data": "2026-11-22", "tema": "tetto ai pagamenti in contanti dal 2011 a oggi", "cifra_nel_gancio": true, "postId": "cmwjollji00gss29isb93z7vd"},
-    {"data": "2026-11-24", "tema": "cambiali e protesto anni Sessanta", "cifra_nel_gancio": false, "postId": "cmwjolll200gts29i5k3y4ken"},
-    {"data": "2026-11-25", "tema": "lire da cambiare: termine anticipato al 6 dicembre 2011", "cifra_nel_gancio": false, "postId": "cmwjollm500gus29izb684ivi"},
-    {"data": "2026-11-26", "tema": "Sei nato nel 1960? prezzi di latte, vino, zucchero, burro, caffè", "cifra_nel_gancio": true, "postId": "cmwjphb0m00hcs29i8xor3lx9"},
-    {"data": "2026-11-27", "tema": "caffè e zucchero 1961 contro 2010 a prezzi di oggi", "cifra_nel_gancio": true, "postId": "cmwjphb1h00hds29i4wggc7x5"},
-    {"data": "2026-11-28", "tema": "Sei nato nel 1970? prezzi", "cifra_nel_gancio": true, "postId": "cmwjphb2c00hes29iyibh2qm6"},
-    {"data": "2026-11-29", "tema": "lira o euro? inflazione 21,2% nel 1980", "cifra_nel_gancio": true, "postId": "cmwjphb3c00hfs29i3mpbxjv0"},
-    {"data": "2026-11-30", "tema": "Sei nato nel 1980? prezzi", "cifra_nel_gancio": true, "postId": "cmwjphb4900hgs29ih07qwvms"}
+    {
+      "data": "2026-11-17",
+      "tema": "miniassegni del 1975",
+      "cifra_nel_gancio": false,
+      "postId": "cmwjolldz00gns29ipqr70wov"
+    },
+    {
+      "data": "2026-11-18",
+      "tema": "Fiat 600 a rate e cambiali, 590.000 lire nel 1955",
+      "cifra_nel_gancio": true,
+      "postId": "cmwjollf200gos29iqws2el0x"
+    },
+    {
+      "data": "2026-11-19",
+      "tema": "mille lire = 50 centesimi? cambio 1.936,27",
+      "cifra_nel_gancio": true,
+      "postId": "cmwjollg700gps29ienevhl4x"
+    },
+    {
+      "data": "2026-11-20",
+      "tema": "carta e telefono: spendiamo di più?",
+      "cifra_nel_gancio": false,
+      "postId": "cmwjollh900gqs29ipw7e2e3t"
+    },
+    {
+      "data": "2026-11-21",
+      "tema": "Bancomat 1983",
+      "cifra_nel_gancio": false,
+      "postId": "cmwjollid00grs29icuvvc1vw"
+    },
+    {
+      "data": "2026-11-22",
+      "tema": "pensione a 35 anni negli anni Settanta (baby pensioni)",
+      "cifra_nel_gancio": true,
+      "postId": "cmwjphazh00hbs29i9zwvxa3n"
+    },
+    {
+      "data": "2026-11-22",
+      "tema": "tetto ai pagamenti in contanti dal 2011 a oggi",
+      "cifra_nel_gancio": true,
+      "postId": "cmwjollji00gss29isb93z7vd"
+    },
+    {
+      "data": "2026-11-24",
+      "tema": "cambiali e protesto anni Sessanta",
+      "cifra_nel_gancio": false,
+      "postId": "cmwjolll200gts29i5k3y4ken"
+    },
+    {
+      "data": "2026-11-25",
+      "tema": "lire da cambiare: termine anticipato al 6 dicembre 2011",
+      "cifra_nel_gancio": false,
+      "postId": "cmwjollm500gus29izb684ivi"
+    },
+    {
+      "data": "2026-11-26",
+      "tema": "Sei nato nel 1960? prezzi di latte, vino, zucchero, burro, caffè",
+      "cifra_nel_gancio": true,
+      "postId": "cmwjphb0m00hcs29i8xor3lx9"
+    },
+    {
+      "data": "2026-11-27",
+      "tema": "caffè e zucchero 1961 contro 2010 a prezzi di oggi",
+      "cifra_nel_gancio": true,
+      "postId": "cmwjphb1h00hds29i4wggc7x5"
+    },
+    {
+      "data": "2026-11-28",
+      "tema": "Sei nato nel 1970? prezzi",
+      "cifra_nel_gancio": true,
+      "postId": "cmwjphb2c00hes29iyibh2qm6"
+    },
+    {
+      "data": "2026-11-29",
+      "tema": "lira o euro? inflazione 21,2% nel 1980",
+      "cifra_nel_gancio": true,
+      "postId": "cmwjphb3c00hfs29i3mpbxjv0"
+    },
+    {
+      "data": "2026-11-30",
+      "tema": "Sei nato nel 1980? prezzi",
+      "cifra_nel_gancio": true,
+      "postId": "cmwjphb4900hgs29ih07qwvms"
+    },
+    {
+      "data": "2026-11-22",
+      "ora": "13:00",
+      "tema": "TREND GTA 6: prezzo 79,99 € contro GTA 5 69,99 € del 2013 rivalutato Istat (85 €)",
+      "cifra_nel_gancio": true,
+      "postId": "cmwr4894i002iml8wba9x1vlj",
+      "spec": "spec/2026-11-22-gta6-prezzo.py"
+    },
+    {
+      "data": "2026-11-23",
+      "ora": "12:00",
+      "tema": "TREND GTA 6: 1,84 miliardi stimati al lancio contro record GTA 5 (815,7 milioni in 24 ore)",
+      "cifra_nel_gancio": true,
+      "postId": "cmwr4895p002jml8w80mi3lvj",
+      "spec": "spec/2026-11-23-gta6-record.py"
+    },
+    {
+      "data": "2026-11-23",
+      "ora": "14:30",
+      "tema": "TREND GTA 6: GTA 5 230 milioni di copie in 13 anni",
+      "cifra_nel_gancio": true,
+      "postId": "cmwr4896r002kml8w3kkt71xz",
+      "spec": "spec/2026-11-23-gta5-230milioni.py"
+    }
   ]
 }

@@ -49,7 +49,7 @@ def make_bg(W, H, border=0, seed=7):
 S2 = 840
 ICONS = ["percent", "chart", "doc", "scale", "steps", "stairs", "coin", "coin:<testo>", "house", "wheat", "rings",
          "boxes", "envelope", "handshake", "receipt", "table", "people", "bank", "lock", "euro", "phone", "screen",
-         "magnifier", "car", "cambiale", "cart", "piggy", "calendar", "bottle", "card", "factory", "oldman", "tv"]
+         "magnifier", "gamepad", "car", "cambiale", "cart", "piggy", "calendar", "bottle", "card", "factory", "oldman", "tv"]
 
 def icon(name):
     im = Image.new("RGBA", (S2, S2), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
@@ -163,6 +163,12 @@ def icon(name):
     elif name == "magnifier":
         ell((150, 130, 560, 540), fill=CREAM, w=34); line([(500, 480), (700, 690)], w=60)
         txt((355, 340), label or "?", F("pf9", 240), RED)
+    elif name == "gamepad":
+        d.rounded_rectangle((60, 250, 780, 650), radius=190, fill=DARK, outline=DARK, width=LW)
+        rr((215, 340, 265, 560), fill=CREAM, r=10, w=0); rr((130, 425, 350, 475), fill=CREAM, r=10, w=0)
+        for (cx, cy, col) in [(600, 360, RED), (680, 450, GOLD), (520, 450, TEAL), (600, 540, CREAM)]:
+            d.ellipse((cx - 42, cy - 42, cx + 42, cy + 42), fill=col)
+        if label: txt((420, 150), label, F("pf9", 150), RED)
     elif name == "car":
         d.polygon([(250, 360), (330, 250), (530, 250), (610, 360)], fill=TEAL, outline=DARK); line([(250, 360), (330, 250), (530, 250), (610, 360)], w=LW)
         rr((110, 350, 730, 520), fill=TEAL, r=60)
