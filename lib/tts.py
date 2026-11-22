@@ -7,6 +7,8 @@ import edge_tts
 from common import load_spec
 
 spec = load_spec(sys.argv[1]); OUT = os.path.join(sys.argv[2], "tts")
+# voce della spec (VOICE) o della singola scena (campo "voce"); voci provate il 22/11/2026:
+# it-IT-GiuseppeMultilingualNeural = la più espressiva (variazione di tono 5,3 semitoni contro 3,7 di Elsa)
 VOICE = getattr(spec, "VOICE", "it-IT-ElsaNeural")
 RATE = sys.argv[3] if len(sys.argv) > 3 else getattr(spec, "RATE", "-4%")
 os.makedirs(OUT, exist_ok=True)
@@ -18,7 +20,7 @@ async def one(i, s, sem):
     async with sem:
         for attempt in range(5):
             try:
-                c = edge_tts.Communicate(s["text"], VOICE, rate=RATE, boundary="WordBoundary",
+                c = edge_tts.Communicate(s["text"], s.get("voce", VOICE), rate=s.get("rate", RATE), boundary="WordBoundary",
                                          proxy=os.environ.get("HTTPS_PROXY"))
                 words = []
                 with open(mp3, "wb") as f:

@@ -11,7 +11,8 @@
 # - Struttura: gancio (cifra + "chi vince questa partita?"), la situazione con la barra a zero,
 #   6-10 mosse (1-3 scene ciascuna, la barra si sposta), il risultato finale, la pagella, la domanda per i commenti.
 # - 900-1.400 parole parlate = 6-9 minuti. Capitoli = le mosse.
-RATE = "-4%"
+RATE = "-2%"
+VOICE = "it-IT-GiuseppeMultilingualNeural"  # voce del formato Mossa per mossa
 TIMELINE = (1985, 2026)
 EVAL = ("ITALIA", "MERCATI")
 TITLE = "La lira contro i mercati, 1992"

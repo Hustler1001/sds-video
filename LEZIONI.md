@@ -29,6 +29,12 @@ Cosa facciamo noi (idea, non copia):
 - Temi: eventi economici famosi con due lati in lotta. Lista di partenza (priorità in ordine, ogni cifra da verificare): la lira contro i mercati nel 1992; lo spread del 2011; il passaggio all'euro 1996-2002; lo shock del petrolio 1973 e le domeniche a piedi; l'iperinflazione di Weimar 1923; il crollo di Wall Street 1929; il boom economico 1958-1963; GameStop 2021 (piccoli contro grandi fondi); la bolla dei tulipani 1637; Napoleone e i soldi delle sue guerre. Niente politica di parte, niente morti come tema centrale.
 - Il documentario lungo (18-25 minuti) resta possibile solo se questo formato va peggio.
 
+## Voci (22/11/2026)
+- Provate 8 voci gratuite sulla stessa frase: tutte pronunciano bene l'italiano; la più espressiva è it-IT-GiuseppeMultilingualNeural (variazione di tono 5,3 semitoni; Elsa 3,7; Isabella 3,0).
+- Video lunghi "Mossa per mossa": VOICE = "it-IT-GiuseppeMultilingualNeural", RATE "-2%".
+- Short: resta Elsa, ma uno short su tre con Giuseppe (campo VOICE nella spec) per non sembrare sempre lo stesso stampino. Verdetto 7/12: le visualizzazioni medie cambiano con la voce?
+- Una voce migliore costerebbe soldi (ElevenLabs a pagamento: il piano gratuito non permette l'uso commerciale): da valutare solo se il canale cresce.
+
 ## Esperimenti in corso
 - Dal 25/11: formato lungo "Mossa per mossa" (vedi sopra). Verdetto lunedì 7/12 dallo stratega: i primi 2-3 video contro i documentari 01-03 per visualizzazioni nei primi 7 giorni, ore guardate, iscritti guadagnati. Se rendono di più, si continua e si può salire a 3 a settimana; se rendono meno, si torna al documentario.
 - 22-23/11: 3 short sul trend GTA 6 (prezzo con l'inflazione, record di incassi, 230 milioni di copie di GTA 5). Verdetto lunedì 30/11: hanno fatto più visualizzazioni della media degli altri short? Hanno portato iscritti?
