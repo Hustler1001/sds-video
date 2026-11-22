@@ -13,6 +13,43 @@ W, H = 1920, 1080
 BG = make_bg(W, H, border=12)
 Y0, Y1 = getattr(spec, "TIMELINE", (1860, 2026))
 TITLE = spec.TITLE; CHAPTERS = getattr(spec, "CHAPTERS", {})
+# formato "Mossa per mossa": EVAL = ("ITALIA", "MERCATI") i due lati della barra (il primo sta in basso)
+EVAL = getattr(spec, "EVAL", None)
+VOTI = {"GENIALE": ("!!", (28, 132, 140)), "OTTIMA": ("!", (64, 128, 62)), "BUONA": ("+", (112, 120, 66)),
+        "IMPRECISIONE": ("?!", (205, 160, 36)), "ERRORE": ("?", (214, 112, 38)), "DISASTRO": ("??", RED)}
+
+def fmt_barra(v):
+    t = f"{abs(v):.1f}".replace(".", ",").replace(",0", "")
+    return ("+" if v > 0 else "−" if v < 0 else "") + t
+
+def eval_bar(d, v):
+    """Barra del vantaggio come negli scacchi: v da -10 a +10, positivo = vince il primo lato (in basso)."""
+    if not EVAL or v is None: return
+    x0, x1, y0, y1 = 1792, 1846, 150, 880
+    v = max(-10, min(10, v)); ym = y1 - (y1 - y0) * (v + 10) / 20
+    d.rectangle((x0, y0, x1, y1), fill=DARK)
+    d.rectangle((x0, ym, x1, y1), fill=CREAM)
+    d.rectangle((x0, y0, x1, y1), outline=DARK, width=4)
+    d.line([(x0 - 8, (y0 + y1) / 2), (x0, (y0 + y1) / 2)], fill=DARK, width=4)
+    f = F("ss7", 30); lab = fmt_barra(v)
+    ty = min(max(ym, y0 + 30), y1 - 30)
+    tw = d.textlength(lab, font=f)
+    d.rounded_rectangle((x0 - tw - 34, ty - 24, x0 - 10, ty + 24), radius=10, fill=(DARK if v < 0 else RED if v == 0 else TEAL))
+    d.text((x0 - 22 - tw / 2, ty), lab, font=f, fill=CREAM, anchor="mm")
+    fs = F("ss7", 24)
+    d.text(((x0 + x1) / 2, y0 - 14), EVAL[1], font=fs, fill=DARK, anchor="ms")
+    d.text(((x0 + x1) / 2, y1 + 12), EVAL[0], font=fs, fill=DARK, anchor="mt")
+
+def badge(im, d, m):
+    """Voto della mossa: cerchio colorato con il simbolo, sopra 'MOSSA n · chi', sotto il voto."""
+    sim, col = VOTI[m["voto"]]
+    cx, cy, r = 1460, 400, 175
+    d.ellipse((cx - r + 10, cy - r + 14, cx + r + 10, cy + r + 14), fill=(200, 190, 170))
+    d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=col, outline=DARK, width=8)
+    d.text((cx, cy + 6), sim, font=F("pf9", 210 if len(sim) == 1 else 170), fill=CREAM, anchor="mm")
+    top = f"MOSSA {m['n']}" + (f" · {m['chi']}" if m.get("chi") else "")
+    d.text((cx, cy - r - 40), top.upper(), font=fit(d, top.upper(), "ss7", 38, 560), fill=KICK, anchor="ms")
+    d.text((cx, cy + r + 30), m["voto"], font=F("ss7", 62), fill=col, anchor="mt")
 
 def timeline(d, year):
     x0, x1, y = 150, 1770, 968
@@ -47,7 +84,7 @@ def base_frame(s):
         d.line([(W / 2 - 180, 420), (W / 2 + 180, 420)], fill=DARK, width=6)
         d.text((W / 2, 530), s["sub1"], font=fit(d, s["sub1"], "pf7", 110, 1500), fill=DARK, anchor="mm")
         d.text((W / 2, 660), s.get("sub2", ""), font=F("ss4", 50), fill=GREY, anchor="mm")
-        timeline(d, s.get("year")); return im
+        eval_bar(d, s.get("barra")); timeline(d, s.get("year")); return im
     LX, LW_ = 110, 1100
     f = fit(d, s["big"], "pf9", 150, LW_, 60)
     bb = d.textbbox((LX, 0), s["big"], font=f)
@@ -61,7 +98,10 @@ def base_frame(s):
     for l in wrap(d, s.get("sub2", ""), f2, LW_)[:2]:
         d.text((LX, y), l, font=f2, fill=GREY); y += 52
     if s.get("src"): d.text((LX, y + 14), s["src"], font=F("pfi", 30), fill=GREY)
-    ic = get_icon(s.get("icon", "coin"), 430); im.paste(ic, (1500 - 215, 150), ic)
+    if s.get("mossa"): badge(im, d, s["mossa"])
+    else:
+        ic = get_icon(s.get("icon", "coin"), 430); im.paste(ic, (1500 - 215, 150), ic)
+    eval_bar(d, s.get("barra"))
     timeline(d, s.get("year"))
     return im
 

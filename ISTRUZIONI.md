@@ -43,6 +43,14 @@ Le spec nuove vanno in `spec/AAAA-MM-GG-nome.py`. I file di lavoro in `lavoro/` 
 6. **Video**: `bash make_doc.sh spec/<file>.py <nome>` (circa 5-10 minuti). Controlla `controllo.png`, `copertina.png`, durata, e che il file sia sotto 95 MB.
 7. **Capitoli** per la descrizione: `lavoro/<nome>/capitoli.json` (secondi dall'inizio). Il primo capitolo in descrizione è sempre "00:00 Introduzione".
 
+## MOSSA PER MOSSA (formato lungo attuale, vedi LEZIONI.md)
+
+1. **Tema**: dalla lista in LEZIONI.md o dal foglio Idee; un evento famoso con due lati in lotta. Diverso dagli ultimi due video lunghi.
+2. **Ricerca**: 8-15 ricerche, cronologia delle decisioni con fonti. Ogni cifra: due fonti.
+3. **Spec** (copia `esempi/mossa_esempio_1992.py`): `EVAL`, `TIMELINE`, `CHAPTERS` (una per mossa: "Mossa N · nome"), `COVER` (pill "Mossa per mossa"). Ogni mossa: cartello `card=True` + 1-3 scene, la prima con `mossa=dict(n, chi, voto)`; `barra` su ogni scena (si sposta dopo ogni mossa). 900-1.400 parole parlate, numeri in lettere.
+4. **Anteprima** di 3-4 scene con mossa e guardale; poi `bash make_doc.sh spec/<file>.py <nome>`: durata 6-9 minuti.
+5. Titolo: "<Evento con anno>, mossa per mossa". Descrizione come i documentari (CAPITOLI = le mosse).
+
 ## CONSEGNA A POSTY
 
 1. `bash consegna.sh lavoro/<nome>/<nome>.mp4 [lavoro/<nome>/copertina.png]` stampa gli `URL=...` (il branch `consegna` viene sovrascritto ogni volta: non serve cancellarlo).
@@ -51,7 +59,7 @@ Le spec nuove vanno in `spec/AAAA-MM-GG-nome.py`. I file di lavoro in `lavoro/` 
    - `title` (max 100 caratteri, con le parole che la gente cerca e l'anno), `type` public, `selfDeclaredMadeForKids` no, `containsSyntheticMedia` yes;
    - documentario: anche `thumbnail` = {id, path} della copertina caricata e `tags` (8-12, come nell'esempio).
    - Testo HTML, ogni paragrafo in `<p>`: gancio con le cifre, di cosa parla, domanda per i commenti, CAPITOLI (solo documentari), FONTI, "Video a scopo informativo ed educativo...", frase sulla voce sintetica, 3-5 hashtag con #storiadeisoldi.
-4. **Orari** (Europe/Rome): uno short al giorno alle 18:00; se alle 18:00 c'è un documentario, lo short va alle 12:00. Documentari il martedì alle 18:00. Massimo 3 post al giorno sul canale.
+4. **Orari** (Europe/Rome): uno short al giorno alle 18:00; se alle 18:00 c'è un documentario, lo short va alle 12:00. Video lunghi "Mossa per mossa": venerdì alle 20:30 e martedì alle 18:00 (se lo slot è occupato da un video lungo, il giorno dopo alle 20:30). Massimo 3 post al giorno sul canale.
 5. Verifica con `list_posts`.
 
 ## DOPO
