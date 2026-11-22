@@ -12,9 +12,11 @@ Vale più di ISTRUZIONI.md quando lo contraddice, tranne le "Regole fisse" (veri
 - 0 iscritti su circa 2.400 visualizzazioni di short: gli short non portano gente al canale. Da provare: chiedere l'iscrizione con un motivo concreto ("ogni settimana un anno nuovo"), serie riconoscibili, rimando al documentario.
 
 ## Trend del momento (regola di Gen, 22/11/2026)
-- Segui sempre i temi caldi del momento (uscite, notizie, eventi di cui parlano tutti) e trova l'angolo soldi/economia: prezzi, incassi, inflazione, confronti con il passato.
-- Gli short sul trend vanno pubblicati il prima possibile (entro 1-2 giorni), anche negli slot delle 12:00 o 14:30, rispettando il massimo di 3 post al giorno sul canale.
-- Numeri del trend: se sono stime (per esempio Sensor Tower), dirlo a voce e a schermo.
+- Il TREND viene prima: ogni giorno prendi il tema di cui parlano tutti in Italia (Google Trends Italia, notizie più lette, social), QUALUNQUE sia l'argomento: un videogioco, uno sport, un film, il meteo, un evento, un personaggio.
+- Poi trovi tu l'aggancio con il nostro stile: cifre, prezzi, costi, incassi, inflazione, confronto con la lira e con il passato. Esempio: se tutti parlano di "acqua del mare", lo short spiega quanto costa, quanto vale, quanto è cambiato il prezzo nel tempo, con numeri veri.
+- Pubblica il prima possibile (domani alle 12:00 o 14:30), anche con la coda piena, massimo 3 post al giorno sul canale.
+- Stime di analisti: dirlo a voce e a schermo.
+- Unica eccezione: niente trend su morti, tragedie, vittime, crimini o politica di parte. Lì si passa al secondo trend della lista.
 
 ## Esperimenti in corso
 - 22-23/11: 3 short sul trend GTA 6 (prezzo con l'inflazione, record di incassi, 230 milioni di copie di GTA 5). Verdetto lunedì 30/11: hanno fatto più visualizzazioni della media degli altri short? Hanno portato iscritti?
