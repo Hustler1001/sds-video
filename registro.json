@@ -128,6 +128,31 @@
       "cifra_nel_gancio": true,
       "postId": "cmwr4896r002kml8w3kkt71xz",
       "spec": "spec/2026-11-23-gta5-230milioni.py"
+    },
+    {
+      "data": "2026-11-24",
+      "ora": "12:00",
+      "tema": "TREND Black Friday: 4,3 miliardi stimati (Codacons) e regola dei 30 giorni sugli sconti (art. 17-bis Codice del consumo)",
+      "cifra_nel_gancio": true,
+      "postId": "cmwrtf39j010jml8bsq9752j8",
+      "spec": "spec/2026-11-24-black-friday-sconto-vero.py",
+      "trend": "Black Friday 2026"
+    },
+    {
+      "data": "2026-12-01",
+      "ora": "12:00",
+      "tema": "Quanto valgono oggi 1.000 lire del 1960, 1970, 1980, 1990, 2001 (coefficienti Istat)",
+      "cifra_nel_gancio": true,
+      "postId": "cmwrtf3qv010kml8ber79xm9c",
+      "spec": "spec/2026-12-01-mille-lire-decenni.py"
+    },
+    {
+      "data": "2026-12-02",
+      "ora": "18:00",
+      "tema": "Mille lire al mese del 1939 = 1.057 euro di oggi; 1950 = 22,75 euro (inflazione di guerra)",
+      "cifra_nel_gancio": true,
+      "postId": "cmwrtf4e1010lml8bgdchi682",
+      "spec": "spec/2026-12-02-mille-lire-al-mese-1939.py"
     }
   ]
 }
