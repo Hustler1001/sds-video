@@ -5,6 +5,8 @@ Documentari lunghi (18-25 minuti) e short verticali (25-55 secondi). Pubblico it
 Obiettivo: crescere fino al Programma partner di YouTube (1.000 iscritti + ore di visione dei video lunghi).
 Tutto è gratuito: voce Edge TTS, grafica in Python. Non usare strumenti a crediti.
 
+**Prima di lavorare leggi LEZIONI.md**: dice cosa sta funzionando e quali esperimenti sono in corso. Vale più di queste istruzioni quando le contraddice, tranne le regole fisse qui sotto.
+
 ## Regole fisse (valgono sempre)
 
 1. **Ogni numero, data o legge** va verificato su una fonte primaria (Istat, Banca d'Italia, INPS, MEF, Dipartimento delle Finanze, Normattiva, Gazzetta Ufficiale, Agenzia delle Entrate, Corte costituzionale, Senato/Camera) con WebSearch o WebFetch. Nei documentari ogni cifra importante deve avere **due** fonti concordi; se non le trovi, non usarla. I calcoli li fai in codice con `assert` e li indichi come "Esempio calcolato".
