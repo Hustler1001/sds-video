@@ -43,15 +43,14 @@ Le spec nuove vanno in `spec/AAAA-MM-GG-nome.py`. I file di lavoro in `lavoro/` 
 
 ## CONSEGNA A POSTY
 
-1. `bash consegna.sh lavoro/<nome>/<nome>.mp4 [lavoro/<nome>/copertina.png]` stampa `BRANCH=...` e gli `URL=...`.
+1. `bash consegna.sh lavoro/<nome>/<nome>.mp4 [lavoro/<nome>/copertina.png]` stampa gli `URL=...` (il branch `consegna` viene sovrascritto ogni volta: non serve cancellarlo).
 2. Posty: `get_workspace_context`, `get_integration_schema` (integrationId **cmwim1wcw01qss28ftpsf8cuu**), `upload_media_from_url` con ogni URL (video e copertina).
-3. Subito dopo il caricamento cancella il branch: `git push origin --delete <BRANCH>`.
-4. `preview_post`, poi `create_post` con un idempotencyKey nuovo, type "schedule". Impostazioni YouTube:
+3. `preview_post`, poi `create_post` con un idempotencyKey nuovo, type "schedule". Impostazioni YouTube:
    - `title` (max 100 caratteri, con le parole che la gente cerca e l'anno), `type` public, `selfDeclaredMadeForKids` no, `containsSyntheticMedia` yes;
    - documentario: anche `thumbnail` = {id, path} della copertina caricata e `tags` (8-12, come nell'esempio).
    - Testo HTML, ogni paragrafo in `<p>`: gancio con le cifre, di cosa parla, domanda per i commenti, CAPITOLI (solo documentari), FONTI, "Video a scopo informativo ed educativo...", frase sulla voce sintetica, 3-5 hashtag con #storiadeisoldi.
-5. **Orari** (Europe/Rome): uno short al giorno alle 18:00; se alle 18:00 c'è un documentario, lo short va alle 12:00. Documentari il martedì alle 18:00. Massimo 3 post al giorno sul canale.
-6. Verifica con `list_posts`.
+4. **Orari** (Europe/Rome): uno short al giorno alle 18:00; se alle 18:00 c'è un documentario, lo short va alle 12:00. Documentari il martedì alle 18:00. Massimo 3 post al giorno sul canale.
+5. Verifica con `list_posts`.
 
 ## DOPO
 
