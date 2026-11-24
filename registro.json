@@ -179,6 +179,15 @@
    "postId": "cmwt8z08q01hlnp8vxk83zikn",
    "spec": "spec/2026-12-04-pensione-55-anni-1944.py",
    "da_documentario": "Pensioni 2027"
+  },
+  {
+   "data": "2026-11-25",
+   "ora": "12:00",
+   "tema": "TREND vortice polare: gas 176,80 cent/m3 tasse comprese a ottobre 2026 (+9,1%, ARERA), di cui 41,68 imposte; 1.100 m3 = circa 1.945 euro l'anno (esempio calcolato); 3.423 lire al m3",
+   "cifra_nel_gancio": true,
+   "postId": "cmwuo3hop04h5np8vqmojoy2w",
+   "spec": "spec/2026-11-25-vortice-polare-gas.py",
+   "trend": "Vortice polare / freddo e neve (fine novembre 2026)"
   }
  ]
 }
