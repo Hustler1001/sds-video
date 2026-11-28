@@ -214,6 +214,31 @@
       "cifra_nel_gancio": true,
       "postId": "cmwyyo6nu00uwn08s0je0j1vn",
       "spec": "spec/2026-12-06-una-lira-1913.py"
+    },
+    {
+      "data": "2026-11-29",
+      "ora": "12:00",
+      "tema": "TREND Coppa Davis: 143,8 milioni di impatto economico stimato a Bologna (stima FITP, edizione 2025; 64,8 diretti, 55,2 indiretti, 23,8 indotti) = 278 miliardi di lire; titoli 1976, 2023, 2024, 2025; finale del 29/11/2026",
+      "cifra_nel_gancio": true,
+      "postId": "cmx0e5sd90008mp8uivsfalh5",
+      "spec": "spec/2026-11-29-coppa-davis-bologna.py",
+      "trend": "Coppa Davis 2026 (Italia in finale a Bologna)"
+    },
+    {
+      "data": "2026-12-07",
+      "ora": "18:00",
+      "tema": "100 euro del 2021 oggi valgono 85,83 euro: prezzi +16,5% 2021-2025 (Istat FOI: +8,1%, +5,4%, +0,8%, +1,4%); 1.000 euro del 2021 = 1.165 di oggi",
+      "cifra_nel_gancio": true,
+      "postId": "cmx0e5sev0009mp8uig5vh78c",
+      "spec": "spec/2026-12-07-100-euro-del-2021.py"
+    },
+    {
+      "data": "2026-12-08",
+      "ora": "18:00",
+      "tema": "Moneta da 500 lire del 1982 (acmonital e bronzital, Laura Cretara): 26 centesimi al cambio, 1,07 euro con l'inflazione Istat (2.079 lire)",
+      "cifra_nel_gancio": true,
+      "postId": "cmx0e5sg5000amp8ucdeq02pl",
+      "spec": "spec/2026-12-08-500-lire-1982.py"
     }
   ]
 }
